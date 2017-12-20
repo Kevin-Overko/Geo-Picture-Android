@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/camera_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:cropToPadding="false"
+        android:onClick="camButton"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+    <ImageButton
+        android:id="@+id/gallery_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/camera_button"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:cropToPadding="false"
+        android:onClick="mapButton"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_menu_mapmode"
+        />
+
+
+</RelativeLayout>
+
+<!--
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        tools:context=".PhotoGallery">
+
+        <GridView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:columnWidth="115dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="2dp"
+            android:numColumns="2"
+            android:padding="2dp"
+            android:stretchMode="columnWidth"
+             />
+
+    </RelativeLayout>
+
+-->
